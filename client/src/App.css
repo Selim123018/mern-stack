@@ -1,0 +1,99 @@
+img {
+  width: 100%;
+}
+
+.landing {
+  position: relative;
+  background: url('./img/showcase.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin-top: -24px;
+  margin-bottom: -50px;
+  background-attachment: fixed;
+}
+
+.landing-inner {
+  padding-top: 80px;
+}
+
+.dark-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card-form {
+  opacity: 0.9;
+}
+
+.latest-profiles-img {
+  width: 40px;
+  height: 40px;
+}
+
+.form-control::placeholder {
+  color: #bbb !important;
+}
+
+.textcolor{
+  text-color:white;
+  text-align: center;
+}
+
+.info p {
+  padding: 0 0 10px 50px;
+  margin-bottom: 20px;
+  line-height: 22px;
+  font-size: 14px;
+}
+
+.info i {
+  font-size: 32px;
+  color: #2dc997;
+  float: left;
+}
+
+.list-inline-item a{
+  font-size: 22px;
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+.list-inline-item a:hover{
+   background: #2dc997;
+   color: #fff;
+}
+
+.section-header{
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.box {
+  margin-bottom: 50px;
+  text-align: center;
+  border: 1px solid #e6e6e6;
+  height: 235px;
+  position: relative;
+  background: #fafafa;
+}
+
+.box img{
+  height: 150px;
+}
+
+.about{
+  width: 700px;
+  margin:auto;
+}
