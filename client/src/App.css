@@ -17,6 +17,11 @@ img {
   padding-top: 80px;
 }
 
+.display-3.mb-3{
+  font-size: 50px;
+  margin-top: 70px;
+}
+
 .dark-overlay {
   background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
@@ -77,23 +82,75 @@ img {
 }
 
 .section-header{
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 50px;
 }
 .box {
   margin-bottom: 50px;
   text-align: center;
-  border: 1px solid #e6e6e6;
-  height: 235px;
   position: relative;
   background: #fafafa;
 }
 
 .box img{
-  height: 150px;
+  height: 200px;
 }
 
 .about{
   width: 700px;
   margin:auto;
+}
+
+.sticky.is-sticky {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+body {
+  min-height: 1200px;
+}
+nav {
+  background: #eaebec;
+  min-height: 85px;
+}
+.center{
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.section-box-nine{
+   height: 250px;
+   background: radial-gradient(#6e6e6e,#2f2f2f);
+   background: -webkit-radial-gradient(#6e6e6e,#2f2f2f);
+   background: -moz-radial-gradient(#6e6e6e,#2f2f2f);
+   color: #fff;
+   position: relative;
+   overflow:hidden;
+}
+.section-box-nine figure {
+   position: absolute;
+   text-align: center;
+   padding: 19px;
+   width: 100%;
+   height: 100%;
+}
+.section-box-nine img{
+   height: 100%;
+   position: absolute;
+   transition: ease-in-out .5s;
+   -webkit-transition: ease-in-out .5s;
+   -moz-transition: ease-in-out .5s;
+}
+.section-box-nine:hover img{
+   transform: scale(3);
+   -webkit-transform: scale(3);
+   -moz-transform: scale(3);
+   opacity: 0;
 }

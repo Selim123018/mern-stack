@@ -1,6 +1,6 @@
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import React, { Component } from 'react';
-import { Provider } from 'react-redux'; 
+import { Provider } from 'react-redux';
 import jwt_decode from 'jwt-decode';
 import setAuthToken from './utils/setAuthToken';
 import { setCurrentUser, logoutUser } from './actions/authActions';
@@ -10,7 +10,9 @@ import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import Landing from './components/layout/Landing';
 import Contact from './components/layout/Contact';
-import Project from './components/layout/Project';
+import Technology from './components/layout/Technology';
+import Service from './components/layout/Service';
+import Work from './components/layout/Work';
 import About from './components/layout/About';
 import Register from './components/auth/Register';
 import Login from './components/auth/Login';
@@ -51,8 +53,10 @@ class App extends Component {
 	          <div className="container">
 	            <Route exact path="/register" component={Register} />
 	            <Route exact path="/login" component={Login} />
+              <Route exact path="/technologies" component={Technology} />
+              <Route exact path="/services" component={Service} />
               <Route exact path="/contact" component={Contact} />
-              <Route exact path="/project" component={Project} />
+              <Route exact path="/works" component={Work} />
 	            <Route exact path="/portfolio" component={Portfolio} />
               <Route exact path="/about" component={About} />
 	            <Switch>
@@ -65,7 +69,7 @@ class App extends Component {
 		        <Footer/>
 		      </div>
 		    </Router>
-	    </Provider>  
+	    </Provider>
     );
   }
 }

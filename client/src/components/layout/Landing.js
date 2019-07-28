@@ -1,13 +1,15 @@
 import React, {Component} from 'react';
 import Content from './Content';
-import Project from './Project';
+import Work from './Work';
+import Contact from './Contact';
 
 class Landing extends Component{
   render(){
   	return(
 		  <div>
 	      <Content/>
-	      <Project/>
+	      <Work/>
+        <Contact/>
 	    </div>
     );
   }
